@@ -1,5 +1,5 @@
 //dummy model
-import bugModel from '../../Model/bugModel';
+import bugModel from '../Model/bugModel';
 
 
 export function retrieveBugs(){
