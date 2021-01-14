@@ -1,11 +1,11 @@
-import {createSlice} from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit'
 import {retrieveBugs} from "../bugController";
 
-const slice = createSlice[{
+const slice = createSlice({
     name:"bug",
     initialState:[],
     reducers:{
-        getBugs:state=> retrieveBugs(),
+        getBugs:state => retrieveBugs(),
 
         createBugs:(state,actions)=>{
 
@@ -17,8 +17,8 @@ const slice = createSlice[{
 
         }
     }
-}]
+})
 
-export default slice.reducer;
+export default slice.reducers;
 
-export const {getBugs} = slice.actions;
+export const {getBugs,createBugs,updateBug,markComplete} = slice.actions;

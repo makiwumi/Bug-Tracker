@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import {Provider} from 'react-redux';
-import {ConfigureStore, combineReducers, configureStore} from "@reduxjs/toolkit";
+import {configureStore, combineReducers} from '@reduxjs/toolkit';
 import App from './App';
 
 
@@ -28,5 +28,3 @@ ReactDOM.render(
   , 
   document.getElementById('root')
 );
-
-
